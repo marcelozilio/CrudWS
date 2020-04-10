@@ -6,12 +6,13 @@
 package ws;
 
 import java.util.Set;
+import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
 /**
  * @author marcelozilio
  */
-@javax.ws.rs.ApplicationPath("controle")
+@ApplicationPath("controle")
 public class ApplicationConfig extends Application {
 
     @Override
@@ -31,5 +32,5 @@ public class ApplicationConfig extends Application {
         resources.add(ws.ProdutoNegocio.class);
         resources.add(ws.UsuarioNegocio.class);
     }
-    
+
 }
